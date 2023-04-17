@@ -1,0 +1,13 @@
+.header-menu {
+    display: none;
+
+    svg {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 450px) {
+        display: block;
+    }
+}

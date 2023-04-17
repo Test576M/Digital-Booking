@@ -1,0 +1,22 @@
+.db-logo {
+    img {
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    svg {
+        display: none;
+        width: 71px;
+        height: 52px;
+        margin: 10px 0;
+        
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}

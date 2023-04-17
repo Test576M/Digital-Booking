@@ -1,0 +1,14 @@
+.main-center-layout {
+    margin-left: 25%;
+    margin-right: 25%;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 450px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}

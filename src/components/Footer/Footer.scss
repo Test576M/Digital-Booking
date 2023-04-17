@@ -1,0 +1,32 @@
+footer {
+   align-items: center;
+   background-color: var(--main-blue);
+   bottom: 0;
+   box-sizing: border-box;
+   color: var(--color-text-light);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: .6rem 2rem;
+   position: fixed;
+   width: 100%;
+
+   .leftSide {
+      justify-self: start;
+   }
+
+   .rightSide {
+      display: none;
+      justify-self: end;
+
+      @media (min-width: 768px) {
+         display: flex;
+         gap: 1rem
+      }
+
+      svg {
+         path {
+            fill: var(--color-text-light);
+         }
+      }
+   }
+}

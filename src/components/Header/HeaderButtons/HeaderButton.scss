@@ -1,0 +1,13 @@
+
+.header-buttons {
+    display: flex;
+    align-items: flex-end;
+    .button {
+        @media (max-width: 768px) {
+            width: 164px;
+        }
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+}

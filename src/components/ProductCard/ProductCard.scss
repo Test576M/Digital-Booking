@@ -1,0 +1,105 @@
+.product {
+   &-image {
+      align-items: center;
+      display: flex;
+
+      img {
+         border-radius: var(--border-radius-big);
+         width: 100%;
+         height: 283px;
+         object-fit: cover;
+
+      }
+
+      @media (max-width: 450px) {
+         img {
+            border-radius: 0px 0px var(--border-radius-medium) var(--border-radius-medium);
+            height: auto;
+         }
+      }
+   }
+
+   &-description {
+      padding: 0.5rem;
+
+      .button-primary {
+         width: 100%;
+         
+      }
+   }
+
+   &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--main-black);
+   }
+
+   &-category {
+      opacity: 0.5;
+   }
+
+   &-rate {
+      :last-child {
+         font-family: 'Roboto Bold';
+         font-weight: var(--font-weight-bold);
+         font-size: var(--font-size-small);
+         line-height: 16px;
+         text-align: right;
+      }
+   }
+
+   &-points {
+      border-radius: var(--border-radius-big);
+      background-color: var(--main-black);
+      border: 1px solid var(--main-black);
+      height: 23px;
+      width: 37px;
+      color: var(--color-text-light);
+      text-align: center;
+      line-height: 24px;
+      margin-left: auto;
+   }
+
+   &-location {
+      margin: .8rem 0;
+
+      &-map {
+         font-family: 'Roboto Bold';
+         font-weight: var(--font-weight-semi-bold);
+         font-size: var(--font-size-small);
+         line-height: 16px;
+         color: var(--color-text-dark);
+         display: flex;
+         align-items: center;
+
+         svg {
+            height: 14px;
+            width: 10px;
+
+            &~span {
+               margin-left: 5px;
+            }
+         }
+
+         &--show {
+            color: var(--main-blue);
+            text-transform: uppercase;
+         }
+      }
+
+      &-extras {
+         margin-top: 5px;
+         display: flex;
+         align-items: center;
+      }
+   }
+
+   &-text {
+      font-family: 'Roboto Bold';
+      font-weight: var(--font-weight-semi-bold);
+      font-size: var(--font-size-small);
+      line-height: 16px;
+      margin: .8rem 0;
+   }
+}

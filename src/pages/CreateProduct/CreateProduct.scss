@@ -1,0 +1,154 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    color: var(--main-black)
+}
+
+.administration{
+    padding-bottom: 23px;
+    padding-top: 44px;
+    color: var(--main-black);
+}
+
+.CreateProductForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 25px 59px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius-medium);
+    margin-bottom: 45px;
+    width: 70vw;
+}
+
+.CreateProductForm div.divcito > *{
+    margin: 50px 0px;
+}
+
+.CreateProductForm label {
+    display: flex;
+    flex-direction: column;
+}
+
+.divcito .input > .input-label{
+    font-weight: var(--font-weight-semi-bold);
+    font-size: 16px;
+}
+
+.divcito .textarea > .textarea-label{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.divcito > h3{
+    color: var(--color-text-dark);
+    font-size: 16px;
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.selectContainer{
+    display: flex;
+    font-weight: 300;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.imagesContainer{
+    display: flex;
+    align-items: flex-end;
+}
+
+.imagesContainer > button{
+    margin-left: 20px;
+}
+
+.imageLink{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.imageLink > button{
+    margin-left: 20px;
+}
+
+
+.characteristicsContainer{
+    display: grid;
+    grid-template-columns: 250px 60px 250px 60px;
+    grid-template-rows: auto;
+
+    .characteristicInput{
+        align-self: center;
+    }
+
+    .characteristicLabel{
+        padding: 20px 0;
+    }
+}
+
+.politicsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+
+    .CreateProductForm {
+      width: 90vw;
+    }
+  
+    .divcito > * {
+      margin: 20px 0;
+    }
+  
+    .divcito .input > .input-label{
+      font-size: 14px;
+    }
+  
+    .divcito .textarea > .textarea-label{
+      font-size: 14px;
+    }
+  
+    .selectContainer{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+  
+    .imagesContainer{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imagesContainer > button{
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  
+    .imageLink{
+      grid-template-columns: 80px 80px;
+      grid-gap: 10px;
+    }
+  
+    .characteristicsContainer{
+      grid-template-columns: 160px 60px 160px 60px;
+    }
+  
+    .politicsContainer{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+  }
+  
+  

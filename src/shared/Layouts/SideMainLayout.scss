@@ -1,0 +1,26 @@
+.side-main-layout {
+   display: flex;
+   align-items: stretch;
+
+   .side {
+      width: 50%;
+   }
+
+   .main {
+      align-items: center;
+      display: flex;
+      width: 50%;
+   }
+
+   @media (max-width: 450px) {
+      flex-direction: column;
+
+      .side {
+         width: 100%;
+      }
+
+      .main {
+         width: 100%;
+      }
+   }
+}

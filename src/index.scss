@@ -1,0 +1,94 @@
+
+@import './variables.scss';
+@import 'formsViews';
+
+
+@font-face {
+   font-family: 'Roboto Light';
+   src: url('assets/fonts/Roboto-Light.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roboto Bold';
+   src: url('assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+   font-family: 'Roboto Medium';
+   src: url('assets/fonts/Roboto-Medium.ttf');
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   @media screen and (min-width: 768px) {
+      font-size: 18px;
+   }
+
+   @media screen and (min-width: 1440px) {
+       font-size: 20px;
+   }
+}
+
+body {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   background-color: var(--body-background);
+
+   #app {
+      min-height: 100vh;
+      position: relative;
+   }
+}
+
+body,
+h1,
+h2,
+h3,
+h4 {
+   font-family: 'Roboto Bold';
+   font-weight: var(--font-weight-bold);
+}
+
+p,
+span {
+   font-family: 'Roboto Medium';
+   font-weight: var(--font-weight-semi-bold);
+}
+
+h1 {
+   font-size: var(--font-size-bigger);
+}
+
+h2 {
+   font-size: var(--font-size-big);
+}
+
+h3 {
+   font-size: var(--font-size-medium);
+}
+
+h4 {
+   font-size: var(--font-size-small);
+}
+
+p {
+   font-size: var(--font-size-small);
+}
+
+svg {
+   aspect-ratio: 1/1;
+   flex: none;
+   width: var(--font-size-bigger);
+}
+
+a {
+   color: unset;
+   text-decoration: none;
+}

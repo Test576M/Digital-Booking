@@ -1,0 +1,76 @@
+.textarea {
+
+    &-wrapper {
+       box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+       padding: 5px;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       background-color: var(--color-text-light);
+ 
+       textarea {
+          height: 100px;
+          width: 100%;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+          margin: 0;
+          font-family: 'Roboto Bold';
+          font-weight: var(--font-weight-semi-bold);
+          font-size: var(--font-size-smaller);
+          line-height: 14px;
+          color: var(--color-text-dark);
+ 
+ 
+          &:focus,
+          &:focus-visible {
+             border: none;
+             outline: none;
+          }
+       }
+ 
+       &.focus {
+          border: 1px solid var(--main-blue);
+       }
+ 
+       &.invalid {
+          border: 1px solid var(--error);
+          background-color: var(--error-contrast);
+       }
+ 
+       &.disabled {
+          background-color: var(--main-white);
+          opacity: 0.5;
+       }
+    }
+ 
+    &-icon {
+       height: 24px;
+       margin-right: 8px;
+ 
+       svg {
+          path {
+             fill: var(--main-grey);
+          }
+       }
+    }
+ 
+    &-label {
+       font-family: 'Roboto Bold';
+       font-style: normal;
+       font-weight: var(--font-weight-semi-bold);
+       font-size: var(--font-size-smaller);
+       line-height: 14px;
+       color: var(--color-text-dark);
+    }
+ 
+    &-error {
+       font-family: 'Roboto Bold';
+       font-weight: var(--font-weight-semi-bold);
+       font-size: var(--font-size-smaller);
+       line-height: 14px;
+       text-align: right;
+       color: var(--error);
+       padding-top: 5px;
+    }
+ }
